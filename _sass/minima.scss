@@ -1,9 +1,31 @@
 @charset "utf-8";
 
-// Define defaults for each variable.
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans:wght@400;700&display=swap');
+// Use IBM Plex fonts
 
-$base-font-family: "IBM Plex Sans", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+@font-face {
+  font-family: "IBM Plex Sans KR";
+  src: url("https://raw.githubusercontent.com/IBM/plex/master/IBM-Plex-Sans-KR/fonts/complete/woff/hinted/IBMPlexSansKR-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans KR";
+  font-weight: bold;
+  src: url("https://raw.githubusercontent.com/IBM/plex/master/IBM-Plex-Sans-KR/fonts/complete/woff/hinted/IBMPlexSansKR-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("https://raw.githubusercontent.com/IBM/plex/master/IBM-Plex-Mono/fonts/complete/woff/IBMPlexMono-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono Italic";
+  src: url("https://raw.githubusercontent.com/IBM/plex/master/IBM-Plex-Mono/fonts/complete/woff/IBMPlexMono-Italic.woff") format("woff");
+}
+
+// Define defaults for each variable.
+
+$base-font-family: "IBM Plex Sans KR", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $code-font-family: "IBM Plex Mono" !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
